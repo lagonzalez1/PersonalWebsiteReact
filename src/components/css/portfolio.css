@@ -1,0 +1,45 @@
+html {
+    background-color: #191c1f; 
+}
+
+.main {
+    background-color: #191c1f;
+}
+
+.head {
+    padding-top: 50px;
+    align-items: left !important;
+    text-align: left;
+}
+
+
+.light > p, h1, h2, h3 {
+    color: white !important;
+}
+
+.gradient {
+    background: rgb(25,28,31);
+    background: linear-gradient(9deg, rgba(25,28,31,1) 0%, rgba(25,27,31,1) 45%, rgba(37,38,88,1) 73%);
+    height: 250px;
+    padding: 0px 0px 0px 0px;
+}
+
+.portfolio-title {
+    padding-top: 50px;
+    padding-left: 50px; 
+    font-family: 'Roboto Mono' !important;
+    color: white !important;
+    text-align: left;
+
+}
+
+.table {
+    table-layout: fixed;
+    font-family: 'Roboto Mono' !important;
+    font-size: small;
+}
+
+canvas {
+    height: 300px;
+    width: 300px;
+}
