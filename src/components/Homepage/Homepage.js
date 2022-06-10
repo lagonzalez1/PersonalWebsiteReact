@@ -4,6 +4,8 @@ import Image from "../Images/center2.jpg";
 import { Stack } from "react-bootstrap";
 import { AiFillGithub } from 'react-icons/ai';
 import { AiOutlineLinkedin } from 'react-icons/ai';
+import Ripple from "../AnimContainer/Ripple";
+
 
 export default function Homepage() {
 

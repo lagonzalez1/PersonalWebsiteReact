@@ -6,6 +6,9 @@ import Spinner from "../Loader/Loader.js";
 import * as THREE from "three"
 import { Canvas } from "@react-three/fiber"
 import Ball from "../AnimContainer/Ball"
+import Header from "../Container/Header";
+import Ripple from "../AnimContainer/Ripple";
+import World from "../Models/World";
 import { OrbitControls } from "@react-three/drei";
 import { Physics, usePlane } from '@react-three/cannon'
 
@@ -50,25 +53,14 @@ export default function Portfolio() {
     // GLB image can be used to animate
 
 
-    const Plane = () => {
-        const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0], position: [0,-2.5,0] }))
-        return (
-            <>
-            <mesh ref={ref} receiveShadow>
-                <planeGeometry args={[1000, 1000]} />
-                <shadowMaterial color="#171717" transparent opacity={0.4} />
-                </mesh>
-            </>
-        )
-    }
 
 
     return ( 
         <>
 
-            <div className="container-fluid light gradient">
-                <h3 className="portfolio-title">Portfolio</h3>
-                <hr className="hr-sm" />
+            <div className="container-fluid p-0">
+                <Header/>
+                
             </div>
 
 
@@ -144,7 +136,7 @@ export default function Portfolio() {
 
 
                 <div className="container-fluid padding">
-                    <Ball />
+                    
                 </div>
            
             </div>
