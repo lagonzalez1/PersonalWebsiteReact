@@ -4,8 +4,10 @@
     "\\src",
     "\\src\\components",
     "\\src\\components\\AnimContainer",
+    "\\src\\components\\Container",
+    "\\src\\components\\Models",
     "\\src\\components\\Portfolio"
   ],
-  "SelectedNode": "\\src\\components\\AnimContainer\\Ball.js",
+  "SelectedNode": "\\src\\components\\Models\\World.js",
   "PreviewInSolutionExplorer": false
 }

@@ -6,16 +6,21 @@ source: https://sketchfab.com/3d-models/a-windy-day-fb78f4cc938144e6902dd5cff354
 title: A Windy Day
 */
 
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import FILE from "./world.gltf";
 
 export default function World({ ...props }) {
-  const group = useRef()
-  const { nodes, materials, animations } = useGLTF(FILE)
-  const { actions } = useAnimations(animations, group)
+    const group = useRef()
+    const { nodes, materials, animations } = useGLTF(FILE)
+    const { actions } = useAnimations(animations, group)
+
+
+
+
+
   return (
-    <group ref={group} {...props} dispose={null}>
+      <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="sketchfabtimeframe">
